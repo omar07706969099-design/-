@@ -1,0 +1,6 @@
+{
+  "name": "Holy Quran & Tafsir",
+  "description": "Holy Quran reader with verse-by-verse recitation by esteemed reciters, Al-Tafsir Al-Muyassar, and Tafsir al-Tabari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

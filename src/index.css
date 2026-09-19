@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .font-quran {
+    font-family: 'Amiri Quran', 'Amiri', 'Scheherazade New', serif;
+  }
+  .font-amiri {
+    font-family: 'Amiri', serif;
+  }
+  .font-scheherazade {
+    font-family: 'Scheherazade New', 'Amiri', serif;
+  }
+}
+
+/* Islamic Geometric & Calligraphic Aesthetics */
+.islamic-pattern {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#065F46 0.75px, transparent 0.75px), radial-gradient(#D97706 0.75px, #FAF8F5 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.islamic-border {
+  border: 1px solid rgba(180, 83, 9, 0.25);
+  box-shadow: 0 0 0 1px rgba(6, 95, 70, 0.08);
+}
+
+.surah-header-frame {
+  background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #047857 100%);
+  position: relative;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Dedicated Quranic Exegesis (Tafsir) scrollbar */
+.tafsir-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #059669 #F5F1EA;
+}
+.tafsir-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.tafsir-scrollbar::-webkit-scrollbar-track {
+  background: #F5F1EA;
+  border-radius: 6px;
+}
+.tafsir-scrollbar::-webkit-scrollbar-thumb {
+  background: #059669;
+  border-radius: 6px;
+  border: 1.5px solid #F5F1EA;
+}
+.tafsir-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #047857;
+}
+
+/* Long verse scrollbar */
+.verse-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #10B981 #ECFDF5;
+}
+.verse-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.verse-scrollbar::-webkit-scrollbar-track {
+  background: #ECFDF5;
+  border-radius: 4px;
+}
+.verse-scrollbar::-webkit-scrollbar-thumb {
+  background: #10B981;
+  border-radius: 4px;
+}
+.verse-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Ayah end ornament symbol ۝ styling */
+.ayah-number-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.4rem;
+  border-radius: 9999px;
+  border: 1.5px solid #059669;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin: 0 0.35rem;
+  vertical-align: middle;
+}
+
